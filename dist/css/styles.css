@@ -11243,3 +11243,28 @@ footer.footer .social-link:hover {
   background: linear-gradient(to right, #4b4b4b, #d3d3d3);
   color: #000; /* texto negro para mejor contraste */
 }
+
+/* Estilo personalizado para el navbar */
+#sidebar-wrapper {
+  background: linear-gradient(45deg, #d3d3d3, #a9a9a9, #f5f5dc); /* Gradiente de gris claro a gris oscuro a hueso */
+  color: #fff; /* Asegura que el texto sea visible */
+  padding: 10px; /* Espaciado interno */
+}
+
+.menu-toggle {
+  background-color: #d3d3d3; /* Color de fondo para el botón de menú */
+  border: none; /* Elimina el borde */
+}
+
+.menu-toggle:hover {
+  background-color: #a9a9a9; /* Cambia el fondo al pasar el cursor */
+  color: #000; /* Color del ícono */
+}
+
+.sidebar-nav a {
+  color: #fff; /* Color de los enlaces de navegación */
+}
+
+.sidebar-nav a:hover {
+  color: #d3d3d3; /* Color de los enlaces al pasar el cursor */
+}
