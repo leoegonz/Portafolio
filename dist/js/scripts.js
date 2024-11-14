@@ -78,3 +78,21 @@ function fadeIn(el, display) {
         }
     })();
 };
+
+(function() {
+    emailjs.init(""); // Reemplazar con api key publico
+})();
+
+function sendEmail(event) {
+    event.preventDefault();
+    emailjs.sendForm('', '', '#contactForm')
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Mensaje enviado correctamente');
+            document.getElementById('contactForm').reset(); // Limpia el formulario
+        }, function(error) {
+            console.log('FAILED...', error);
+            alert('Hubo un problema al enviar el mensaje. Inténtalo nuevamente.');
+        });
+}
+
